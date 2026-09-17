@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christopher Jesús Gutiérrez Urbina — Seminario de Computación</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ECE7DD;
+    --card:#F7F4EC;
+    --ink:#1E2A38;
+    --ink-soft:#4B5563;
+    --rule:#C9C2B2;
+    --accent:#8A6D3B;
+    --accent-soft:#EFE6D2;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    padding:40px 36px;
+  }
+
+  .top-rule{
+    height:3px;
+    background:var(--accent);
+    width:56px;
+    margin-bottom:28px;
+  }
+
+  h1{
+    font-family:'Source Serif 4', serif;
+    font-weight:700;
+    font-size:clamp(28px, 5vw, 38px);
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+
+  .seminar{
+    font-family:'Source Serif 4', serif;
+    font-style:italic;
+    font-size:18px;
+    color:var(--ink-soft);
+    margin:0 0 24px;
+  }
+
+  .datos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:28px;
+    padding-top:20px;
+    border-top:1px solid var(--rule);
+  }
+
+  .dato{
+    min-width:120px;
+  }
+
+  .dato span{
+    display:block;
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-bottom:2px;
+  }
+
+  .dato strong{
+    font-size:16px;
+    font-weight:600;
+  }
+
+  section.actividades{
+    margin-top:40px;
+  }
+
+  section.actividades h2{
+    font-family:'Source Serif 4', serif;
+    font-size:22px;
+    font-weight:600;
+    margin:0 0 18px;
+  }
+
+  ol.lista{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border-top:1px solid var(--rule);
+  }
+
+  ol.lista li{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    padding:16px 0;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .num{
+    font-family:'Source Serif 4', serif;
+    font-weight:600;
+    color:var(--accent);
+    font-size:15px;
+    width:22px;
+    flex:none;
+  }
+
+  .actividad-nombre{
+    flex:1;
+    font-weight:500;
+  }
+
+  .actividad-nombre small{
+    display:block;
+    font-weight:400;
+    color:var(--ink-soft);
+    font-size:13px;
+    margin-top:2px;
+  }
+
+  .actividad-link a{
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    padding:6px 14px;
+    border:1px solid var(--accent);
+    border-radius:2px;
+    white-space:nowrap;
+  }
+
+  .actividad-link a:hover,
+  .actividad-link a:focus-visible{
+    background:var(--accent);
+    color:var(--card);
+  }
+
+  .actividad-link .pendiente{
+    color:var(--ink-soft);
+    border-color:var(--rule);
+    font-weight:500;
+  }
+
+  .actividad-link .pendiente:hover{
+    background:transparent;
+    color:var(--ink-soft);
+  }
+
+  footer{
+    margin-top:32px;
+    font-size:13px;
+    color:var(--ink-soft);
+    text-align:center;
+  }
+
+  @media (max-width:480px){
+    .wrap{ padding:40px 16px 64px; }
+    .card{ padding:28px 22px; }
+    ol.lista li{ flex-wrap:wrap; }
+    .actividad-link{ margin-left:38px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <div class="top-rule"></div>
+    <h1>Christopher Jesús Gutiérrez Urbina</h1>
+    <p class="seminar">Seminario de Computación</p>
+
+    <div class="datos">
+      <div class="dato">
+        <span>Matrícula</span>
+        <strong>1854500</strong>
+      </div>
+      <div class="dato">
+        <span>Grupo</span>
+        <strong>032</strong>
+      </div>
+    </div>
+
+    <section class="actividades">
+      <h2>Actividades</h2>
+      <!--
+        Para agregar una nueva actividad, copia un bloque <li>...</li> completo
+        y pégalo al final de la lista. Cambia el número, el nombre y el href.
+        Si aún no tienes el enlace, deja href="#" y la clase "pendiente".
+      -->
+      <ol class="lista">
+        <li>
+          <span class="num">01</span>
+          <span class="actividad-nombre">
+            Actividad 1 - preguntas y respuestas IOT
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/b/c/0c0bc4e22604600f/IQD0db8exgmGTo0uIz0iLc0GAdeH1R52jtBWo5IVBjT9Moc?e=4iNDwV">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">02</span>
+          <span class="actividad-nombre">
+            Actividad 2 - preguntas y respuestas IA
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/b/c/0c0bc4e22604600f/IQCKTXkccJFxT7eeDTXRDOB-AQfYzyrTQXmsOTyqavOuSo8?e=DlgezE">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">03</span>
+          <span class="actividad-nombre">
+            Actividad 3 - Internet de las cosas
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/b/c/0c0bc4e22604600f/IQABN0W7xpTFSrw6c_5xUvpmAff4QQN80We97qW6_-aOZLY?e=N0zRYv">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">04</span>
+          <span class="actividad-nombre">
+            Actividad 4 - Inteligencia artificial
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/b/c/0c0bc4e22604600f/IQC9L5676RutTrfLtwm9KKZEAZ79SGuE1qVLyWtlnKu8wto?e=bVa4tI">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">05</span>
+          <span class="actividad-nombre">
+            Actividad 5 - Cloud computing
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/b/c/0c0bc4e22604600f/IQBTkXTNqsNJQJapmFKiFCphAV1CTc_gqJe0gOb-iA0qO-I?e=lSO2Zl">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">06</span>
+          <span class="actividad-nombre">
+            Actividad 6 - Actividad 3 c++
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/u/c/0c0bc4e22604600f/IQCUd0Df67MRR5qZw7ucvKItAZmZe22jLasUqXu57JhLphM?e=B9Ri9e">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">07</span>
+          <span class="actividad-nombre">
+            Actividad 7 - Actividad 2 c++
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/u/c/0c0bc4e22604600f/IQCEzz6Lg4WhRru2hZIyJTHGAdNGwHvfIDOPqiqyZ7GdQsk?e=bXN8hX">Ver actividad</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="num">08</span>
+          <span class="actividad-nombre">
+            Actividad 8 - Actividad 1 py
+          </span>
+          <span class="actividad-link">
+            <a class="pendiente" href="https://1drv.ms/u/c/0c0bc4e22604600f/IQC8-Ls4RDUpTIjrEmuKQrPyAU4DkrtpuXnuvssJ-TnwRp0?e=3c18aS">Ver actividad</a>
+          </span>
+        </li>
+
+      </ol>
+    </section>
+  </div>
+
+  <footer>
+    Última actualización: — completa esta fecha cada vez que agregues una actividad.
+  </footer>
+
+</div>
+</body>
+</html>
